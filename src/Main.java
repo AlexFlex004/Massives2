@@ -2,14 +2,13 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-
         {
             ////////////////////////////
             System.out.println("CASE 1");
             int[] money = {14000, 24000, 34000, 40000, 20000};
             int sum = 0;
-            for (int i = 0; i < money.length; i++) {
-                sum = money[i]++;
+            for (int i = 0; i <= 4; i++) {
+                sum = sum + money[i];
             }
             System.out.println("Сумма трат за месяц составила " + sum + " рублей");
         }
@@ -39,11 +38,14 @@ public class Main {
             System.out.println("CASE 3");
             int[] money = {14000, 24000, 34000, 40000, 20000};
             int sum = 0;
-            for (int expense : money) {
-                sum = expense++;
+            int i = 0;
+            for (i = 0; i <= 4; i++) {
+                sum = sum + money[i];
             }
-            double average = sum / (double)money.length;
-            System.out.println("Средняя сумма трат за месяц составила " + average + " рублей.");
+                double average = sum / i;
+
+                System.out.println("Средняя сумма трат за месяц составила " + average + " рублей.");
+
         }
 
         {
